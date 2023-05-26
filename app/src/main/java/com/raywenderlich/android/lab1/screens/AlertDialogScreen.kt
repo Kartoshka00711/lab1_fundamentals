@@ -36,8 +36,8 @@ fun MyAlertDialog() {
             FundamentalsRouter.navigateTo(Screen.Navigation)
         },
 
-            title = { Text(text = stringResource(id = R.string.внимание)) },
-            text = { Text(text = stringResource(id = R.string.это_диалоговое_окно)) },
+            title = { Text(text = stringResource(id = R.string.title_alertDialog))},
+            text = { Text(text = stringResource(id = R.string.alertDialog_about))},
             confirmButton = {
                 Button(
                     colors = ButtonDefaults.buttonColors(backgroundColor = Color.Blue),
@@ -47,7 +47,7 @@ fun MyAlertDialog() {
                     }
                 ) {
                     Text(
-                        text = stringResource(id = R.string.закрыть),
+                        text = stringResource(id = R.string.massage_button),
                         color = Color.White
                     )
                 }
